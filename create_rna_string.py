@@ -10,7 +10,7 @@ def create_rna_string(k):
 	output = ''
 	length_output = 0
 	while length_output < k:
-		if k - length_output > 4:
+		if k - length_output >= 4:
 			output+= random.choice(tetramers)
 			length_output += 4
 		elif k - length_output >= 2:
